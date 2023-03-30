@@ -1,1 +1,38 @@
-회원가입 폼
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html > body {
+            font-family: 'Pretendard-Regular';
+            text-underline-position: under;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<form th:action method="POST" class="p-10 flex flex-col gap-4">
+    <div>
+        <input type="text" name="username" placeholder="아이디" class="input input-bordered">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="비밀번호" class="input input-bordered">
+    </div>
+    <div>
+        <input type="submit" value="회원가입" class="btn btn-primary">
+    </div>
+</form>
+
+</body>
+</html>
